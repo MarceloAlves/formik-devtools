@@ -1,0 +1,67 @@
+{
+  "name": "formik-devtools",
+  "author": "Marcelo Alves",
+  "module": "dist/formik-devtools.esm.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marceloalves/formik-devtools.git"
+  },
+  "keywords": [
+    "formik",
+    "devtools"
+  ],
+  "bugs": {
+    "url": "https://github.com/marceloalves/formik-devtools/issues"
+  },
+  "homepage": "https://github.com/marceloalves/formik-devtools",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "formik": "^2.1.5",
+    "lodash": "^4.17.20",
+    "lodash-es": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.161",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tsdx": "^0.13.3",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  }
+}
